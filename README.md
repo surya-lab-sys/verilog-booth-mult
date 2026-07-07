@@ -38,14 +38,6 @@ module booth_mult(prod, q, m, clk, start);
    - Performs a sign-preserving (arithmetic) right shift across `{A, q_reg, q_1}`.
 3. After 4 iterations (since this is a 4-bit design), the final result is latched into `prod` as `{A, q_reg}`.
 
-## Simulating
-
-Using [Icarus Verilog](http://iverilog.icarus.com/):
-
-```bash
-iverilog -o sim booth_mult.v tb_booth.v
-vvp sim
-```
 
 ## Example
 
