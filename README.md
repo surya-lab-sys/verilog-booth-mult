@@ -46,4 +46,4 @@ Multiplying `q = 3` and `m = -2` should produce `prod = -6`.
 ## Notes
 
 - This is a fixed 4-bit implementation. `prod` is 8 bits wide since multiplying two N-bit numbers can require up to 2N bits to represent the result.
-- There is no `reset` or `done` signal in this version â€” `start` alone handles initialization, and `prod` should be read only after enough clock cycles have passed for the multiplication to complete (4 cycles after `start` is released).
+- There is no `reset` or `done` signal in this version  `start` alone handles initialization, and `prod` should be read only after enough clock cycles have passed for the multiplication to complete (4 cycles after `start` is released).
